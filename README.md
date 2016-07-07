@@ -8,3 +8,5 @@ Operates on folders containing images. The following are supported:
 - Annotate image by drawing lines.
 
 Very useful to make animations from multiple image sequences with frames that correspond to each other. By chaining together the four supported operations, complex transformation hierarchies can easily be realized.
+
+Currently each transformation is done on ALL images step-by-step, which potentially requires a lot of temporary disk space. A straightforward extension would be to do the entire processing chain on one frame at the time.
